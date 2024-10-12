@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.865);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    background-color: rgb(112, 206, 238);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search {
+    height: fit-content;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search .btn {
+    background-color: rgb(212, 227, 232);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search input {
+    font-size: 1rem;
+    border-radius: 30px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(212, 227, 232);
+    outline: transparent;
+    border: 1px solid rgb(155, 186, 197);
+    width: 70%;
+}
+
+.search i {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.errormsg h3 {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.img-data {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-data img {
+    width: 80%;
+    height: auto;
+    max-width: 150px;
+}
+
+.img-data h1 {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.img-data h2 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.left, .right {
+    text-align: center;
+}
+
+.left h2, .right h2 {
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+.left h4, .right h4 {
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.left img, .right img {
+    width: 30px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 95%;
+    }
+
+    .img-data h1 {
+        font-size: 2rem;
+    }
+
+    .img-data h2 {
+        font-size: 1.2rem;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search input {
+        font-size: 0.9rem;
+    }
+
+    .img-data h1 {
+        font-size: 1.8rem;
+    }
+
+    .img-data h2 {
+        font-size: 1rem;
+    }
+
+    .bottom {
+        margin-top: 10px;
+    }
+
+    .left h2, .right h2 {
+        font-size: 1rem;
+    }
+
+    .left h4, .right h4 {
+        font-size: 0.9rem;
+    }
+
+    .search i {
+        font-size: 1.2rem;
+    }
+}
